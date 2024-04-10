@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\Desktop\\GoogleNewsApplication\\WebApplicationGoogleNewss\\wwwroot\\JavaScript.js",
+      "PackagePath": "staticwebassets\\JavaScript.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\GoogleNewsApplication\\WebApplicationGoogleNewss\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebApplicationGoogleNewss.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WebApplicationGoogleNewss.props",
+      "PackagePath": "build\\WebApplicationGoogleNewss.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApplicationGoogleNewss.props",
+      "PackagePath": "buildMultiTargeting\\WebApplicationGoogleNewss.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WebApplicationGoogleNewss.props",
+      "PackagePath": "buildTransitive\\WebApplicationGoogleNewss.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

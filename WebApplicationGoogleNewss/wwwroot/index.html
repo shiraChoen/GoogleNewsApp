@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS Items</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="rssItems" class="post-list">
+        <asp:Repeater ID="Repeater1" runat="server">
+            <ItemTemplate>
+                <div class="post">
+                    <h2><%# Eval("Title") %></h2>
+                    <p><%# Eval("Description") %></p>
+                    <a href="<%# Eval("Link") %>" class="read-more">Read more</a>
+                    <div class="full-content" style="display:none;"></div>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // GET request to API
+            $.get("http://localhost:7034/News", function (data) {
+                // Go over the data received from the API
+                data.forEach(function (item) {
+                    $("#rssItems").append(`
+                                        <div class="post">
+                                            <h2>${item.title}</h2>
+                                            <p>${item.description}</p>
+                                            <a href="${item.link}" class="read-more">Read more</a>
+                                            <div class="full-content" style="display:none;"></div>
+                                        </div>
+                                    `);
+                });
+            });
+
+            // Ajax call to display full post content
+            $(document).on("click", ".read-more", function (e) {
+                e.preventDefault();
+                var title = $(this).closest(".post").find("h2").text();
+                var fullContentDiv = $(this).closest(".post").find(".full-content");
+                $.get(`http://localhost:7034/News/${title}`, function (data) {
+                    // Display the full content using slideDown
+                    fullContentDiv.slideDown().html(`<p>${data.description}</p><a href="${data.link}">Read more</a>`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

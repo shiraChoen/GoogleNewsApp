@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "ejTSwAa98hBOXRlJTQJH7GpazqKaJzOuWN5dBV5+Pv4=",
+  "Source": "WebApplicationGoogleNewss",
+  "BasePath": "_content/WebApplicationGoogleNewss",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApplicationGoogleNewss\\wwwroot",
+      "Source": "WebApplicationGoogleNewss",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\GoogleNewsApplication\\WebApplicationGoogleNewss\\wwwroot\\",
+      "BasePath": "_content/WebApplicationGoogleNewss",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\GoogleNewsApplication\\WebApplicationGoogleNewss\\wwwroot\\index.html",
+      "SourceId": "WebApplicationGoogleNewss",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\GoogleNewsApplication\\WebApplicationGoogleNewss\\wwwroot\\",
+      "BasePath": "_content/WebApplicationGoogleNewss",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\GoogleNewsApplication\\WebApplicationGoogleNewss\\wwwroot\\JavaScript.js",
+      "SourceId": "WebApplicationGoogleNewss",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\GoogleNewsApplication\\WebApplicationGoogleNewss\\wwwroot\\",
+      "BasePath": "_content/WebApplicationGoogleNewss",
+      "RelativePath": "JavaScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\JavaScript.js"
+    }
+  ]
+}
